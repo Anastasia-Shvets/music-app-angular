@@ -1,0 +1,20 @@
+<div class="album__card" (click) = "changeLikeStatus()">
+  <div class="image__item">
+    <img src="{{ image }}">
+  </div>
+
+  <div class="hovered__open-heart">
+    <div class="hovered__content">
+      <h2 class="album__name">{{album.name}}</h2>
+      <p class="artist__name">{{album.artist.name}}</p>
+      <div
+      [class.not__liked]="!album.liked"
+      [class.liked]="album.liked"
+      ></div>
+    </div>
+  </div>
+</div>
+
+
+
+

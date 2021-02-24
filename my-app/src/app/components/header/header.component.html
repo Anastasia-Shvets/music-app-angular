@@ -1,0 +1,17 @@
+<div class="header__container">
+  <div class="left__block">
+    <a
+    [routerLink]="['']"
+    >Back</a>
+    <form>
+      <input type="text" (input)="searchAlbumsByTag($event)">
+    </form>
+  </div>
+  <div class="header__heart">
+    <div class="heart">
+      <div class="heart__counter">{{ likesCounter }}</div>
+    </div>
+  </div>
+</div>
+
+

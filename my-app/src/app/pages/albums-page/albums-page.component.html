@@ -1,0 +1,17 @@
+<app-header
+  class="header"
+  [likesCounter] = likesCounter
+  (searchAlbums) = "searchAlbumsByTag($event)"
+></app-header>
+<div class="container">
+  <section class="albums">
+    <app-album-card
+      class="album"
+      *ngFor="let album of albums"
+      [album] = album
+      (changeLikesCounter)="updateLikesCounter($event)"
+    ></app-album-card>
+  </section>
+</div>
+
+

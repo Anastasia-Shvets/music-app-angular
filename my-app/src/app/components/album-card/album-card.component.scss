@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,500&display=swap');
+
+.album__card {
+    width: 100%;
+    height: 100%;
+
+
+  img {
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  .hovered__open-heart {
+    background-color: #1A1919;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+    .hovered__content {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      height: 130px;
+
+      .album__name,
+      .artist__name {
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 400;
+        font-style: normal;
+        color: #eee;
+      }
+
+      .not__liked {
+        background: url(../../../assets/img/heart.png);
+        width: 32px;
+        height: 32px;
+        background-size: 100% 100%;
+      }
+
+      .liked {
+        background: url(../../../assets/img/heart_liked.png);
+        width: 32px;
+        height: 32px;
+        background-size: 100% 100%;
+      }
+    }
+  }
+}
+
+
+.album__card:hover .hovered__open-heart {
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.album__card:hover .image__item {
+  display: none;
+}
+

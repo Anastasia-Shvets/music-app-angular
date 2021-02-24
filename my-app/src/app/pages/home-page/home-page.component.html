@@ -1,0 +1,10 @@
+<div class="container">
+  <section class="genre">
+    <app-genre-card
+    *ngFor="let iterCard of genreCards; let idx = index"
+    [card]=iterCard
+    [index] = "idx"
+    class="card"
+    ></app-genre-card>
+  </section>
+</div>

@@ -1,0 +1,14 @@
+<div
+[routerLink]="['/albums', card.genre]"
+class="genre__card"
+[class.red]="index===0"
+[class.turquoise]="index===1"
+[class.orange]="index===2"
+[class.palegreen]="index===3"
+[class.pink]="index===4"
+[class.blue]="index===5"
+>
+  <h2>{{ card.genre }}</h2>
+  <img src="{{ card.imgUrl }}" alt="">
+</div>
+
